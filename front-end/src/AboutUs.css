@@ -1,0 +1,24 @@
+.AboutUs {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.AboutUs img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 1rem 0;
+}
+
+.AboutUs p {
+  text-align: left;
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+.AboutUs-error {
+  color: red;
+  font-weight: bold;
+}

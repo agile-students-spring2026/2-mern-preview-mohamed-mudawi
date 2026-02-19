@@ -78,5 +78,19 @@ app.post('/messages/save', async (req, res) => {
   }
 })
 
+// a route to handle fetching about us info
+app.get('/about', (req, res) => {
+  res.json({
+    name: 'Mohamed Mudawi',
+    paragraphs: [
+      'Hello! My name is Mohamed Mudawi. I am a computer science student at New York University with a passion for software engineering. This upcoming summer, I will be working at Microsoft as a software engineering intern.',
+      'I enjoy full stack development, specifically with distributed systems and cloud computing since it allows me to work with and build massive systems that can handle a lot of users and data.',
+      'Outside of school, I enjoy playing soccer and traveling. I grew up in New York City and have been living there ever since.'
+    ],
+    imageUrl: '/IMG_9960.jpeg',
+    status: 'all good',
+  })
+})
+
 // export the express app we created to make it available to other modules
 module.exports = app // CommonJS export style!
